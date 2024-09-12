@@ -12,10 +12,25 @@ the 20-year bonds pay 4.32%, with each compounding annually.
 """
 
 ### all your code below ###
+#final = principal * ((1 + (rate / 100)) ** n)
 
+principal = 33000000000
+
+# 10 year bonds
+rate10 = 3.96
+n10 = 10
 
 # final answer for 10-year
-ten_year_final = None
+ten_year_final = principal * ((1 + (rate10 / 100)) ** n10)
+
+# 20 year bonds
+rate20 = 4.32
+n20= 20
 
 # final answer for 20-year
-twenty_year_final = None
+twenty_year_final = principal * ((1 + (rate20 / 100)) ** n20)
+
+print('Elons investment would have been worth $', ten_year_final, 'in 10 years')
+print('Elons investment would have been worth $', twenty_year_final, 'in 20 years')
+
+##SUBMITTED

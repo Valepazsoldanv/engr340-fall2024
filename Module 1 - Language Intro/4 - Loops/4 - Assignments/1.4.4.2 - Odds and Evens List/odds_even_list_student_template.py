@@ -30,7 +30,11 @@ odds_list = []
 """
 Step 1: Write a FOR loop to iterate through the list nums
 """
-
+for num in nums:
+    if num % 2 == 0:
+        evens_list.append(num)
+    else:
+        odds_list.append(num)
 
 """
 Step 2: Inside the FOR loop, examine the contents of nums. If the
@@ -40,5 +44,3 @@ odds_list
 
 print("The evens list contains: ", evens_list)
 print("The odds list contains: ", odds_list)
-
-

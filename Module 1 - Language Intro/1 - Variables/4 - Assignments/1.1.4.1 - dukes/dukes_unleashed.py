@@ -10,6 +10,22 @@ Note: this problem does not require the "compounding interest" formula from the 
 
 ### Your code here ###
 
-in_state_gift = 0
+Investment = 1E6
+Return = 0.05
 
-out_state_gift = 0
+# x*.05 --> 30792 for instate
+
+in_state_tuition = 30792
+out_state_tuition = 47882
+
+
+in_state_gift = (in_state_tuition / Return)
+
+out_state_gift = (out_state_tuition / Return)
+
+print("$", str(in_state_gift))
+print("$", str(out_state_gift))
+
+# There is a lot of way this could have been done, but my understanding is that the entire 5% return would go to the student's tuition.
+
+#SUBMITTED
