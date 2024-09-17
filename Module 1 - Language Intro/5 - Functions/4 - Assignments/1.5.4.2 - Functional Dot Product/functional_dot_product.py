@@ -1,5 +1,8 @@
 import random
+
+import numpy
 import numpy as np
+from numpy.random import random_sample
 
 
 # copy in Dr. Forsyth's random list function for use
@@ -17,12 +20,12 @@ def dot_product(a,b):
     :param b: List B of values
     :return: The dot product as a value between a * b
     """
-
-    ### YOUR CODE HERE ###
-
+    dot_prod = 0
+    for i in range(len(a)):
+        dot_prod += a[i] * b[i]
 
     ### CHANGE THIS RETURN VALUE. IT IS HERE SO THE CODE DOES NOT ERROR
-    return None
+    return dot_prod
 
 """
 Step 1: Generate two "vectors" of equal length but full of random values
@@ -36,7 +39,7 @@ vector_b = generate_random_int_list(fixed_length, maximum_value)
 """
 Step 2: Call your custom dot_product function
 """
-result = dot_product(vector_a,vector_b)
+result = dot_product(vector_a, vector_b)
 
 """
 Step 3: Check your calculation against numpy
@@ -54,3 +57,6 @@ elif abs(result - true_result) < 0.0001:
 
 else:
     print("Result contains too much error!")
+
+
+##SUBMITTED
