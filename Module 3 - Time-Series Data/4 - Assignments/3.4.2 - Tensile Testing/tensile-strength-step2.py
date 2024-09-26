@@ -61,8 +61,11 @@ def calculate_stress(force, sample_diameter):
     """
 
     ### YOUR SOLUTION FROM STEP 1 TEMPLATE HERE ###
+    cross_section_area = (np.pi * (sample_diameter / 2) ** 2)
+    force_n = force * 1000
+    stress = (force_n / cross_section_area)
 
-    return None
+    return stress
 
 
 def calculate_max_strength_strain(strain, stress):
@@ -76,10 +79,12 @@ def calculate_max_strength_strain(strain, stress):
     """
 
     # calculate the maximum stress experienced
-    ultimate_tensile_stress = -1
+    cross_section_area1 = (np.pi * (sample_diameter / 2) ** 2)
+    ultimate_tensile_stress = max(stress)
+
 
     # calculate the maximum strain experienced
-    fracture_strain = -1
+    fracture_strain = max(strain)
 
     return ultimate_tensile_stress, fracture_strain
 
