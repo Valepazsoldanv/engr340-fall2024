@@ -14,7 +14,7 @@ def generate_csv_file(filename, results):
     # Step 1: create a variable to hold the file name
 
     # uncomment this line
-    output_file_name = "tensile_data.csv"
+    output_file_name = filename
 
     # Step 2: use open() to open the file in write mode. Set the return of open()
     # to a variable name that will be your file handle
@@ -145,4 +145,3 @@ if __name__ == "__main__":
 
     print("Done!")
 
-##SUBMITTED
