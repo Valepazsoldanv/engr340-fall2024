@@ -1,3 +1,5 @@
+from importlib.metadata import files
+
 import numpy as np
 from scipy.stats import ttest_1samp, norm, ttest_ind
 
@@ -33,6 +35,25 @@ def one_sample_tests(_files: list, _mean: float, _alpha: float, _less_than: bool
 
     # list of files that are out of spec
     reject_null_hypothesis = []
+
+    for file_name in _files:
+        data = np.loadtxt(file_name)
+
+        if _less_than:
+            alt = 'less'
+
+        else:
+            alt = 'greater'
+
+        ## note!! ttest_1samp(a, popmean, axis=0, nan_policy='propagate', alternative='two-sided')
+        ## ttest_1samp(hardness, popmean=expected_mean, alternative = 'greater')
+        (stat, p_value) = ttest_1samp(data, popmean=_mean, alternative=alt)
+
+        if p_value < _alpha:
+            reject_null_hypothesis.append(file_name)
+            print('Reject')
+        else:
+            print('Accept')
 
     # YOUR CODE HERE #
 

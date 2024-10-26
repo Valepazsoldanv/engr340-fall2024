@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f5a46b6-983f-4616-bc52-3510f224e72b" name="Changes" comment="" />
+    <list default="true" id="1f5a46b6-983f-4616-bc52-3510f224e72b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Module 5 - Statistics/4 - Assignments/5.4.1 - One Sample Tests/one-sample-student.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 5 - Statistics/4 - Assignments/5.4.1 - One Sample Tests/one-sample-student.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projects/covid-data/student_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/../projects/covid-data/student_template.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,20 +13,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2ldLo3PvUu4BhWDPJlgcrFcIGA1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
