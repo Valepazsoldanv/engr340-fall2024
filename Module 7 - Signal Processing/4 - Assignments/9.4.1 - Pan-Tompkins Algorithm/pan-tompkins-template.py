@@ -14,8 +14,10 @@ def detect_heartbeats(filepath):
     # import the CSV file using numpy
     path = filepath
 
+
     # load data in matrix from CSV file; skip first two rows
     ## your code here
+    data = np.loadtxt(signal_filepath, delimiter=',', skiprows=2)
 
     # save each vector as own variable
     ## your code here

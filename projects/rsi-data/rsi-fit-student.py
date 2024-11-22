@@ -7,16 +7,33 @@ import matplotlib.pyplot as plt
 Preamble: Load data from source CSV file
 """
 ### YOUR CODE HERE
+absolute_path = ("C:\\Users\\valep\\OneDrive\\Desktop\\ENGR 340 AS.2\\all_participant_data_rsi.csv")
+file = pd.read_csv(absolute_path)
+print(file)
+
+
+#path_to_file = "../../all_participant_data_rsi.csv"
+#df = pd.read_csv(path_to_file)
+#print(df)
 
 """
 Question 1: Load the force plate and acceleration based RSI data for all participants. Map each data set (accel and FP)
-to a normal distribution. Clearly report the distribution parameters (mu and std) and generate a graph two each curve's 
+to a normal distribution. Clearly report the distribution parameters (mu and std) and generate a graph two each curve's
 probability distribution function. Include appropriate labels, titles, and legends.
 """
 print('-----Question 1-----')
 
 ### YOUR CODE HERE
+force_plate = file['force_plate_rsi']
+acceleration = file['accelerometer_rsi']
 
+##force plate
+mu_fp = np.mean(force_plate)
+std_fp = np.std(force_plate)
+
+##acceleration
+mu_ac = np.mean(acceleration)
+std_ac = np.std(acceleration)
 
 """
 Question 2: Conduct a Chi2 Goodness of Fit Test for each dataset to test whether the data is a good fit

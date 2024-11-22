@@ -181,10 +181,10 @@ def third_question(data):
 
             # defining the 7-day period
             if i >= 7:
-                if i - 7 >= 1:
-                    old_new_sum = (case_list[i - 7][3] - case_list[i - 8][3])
+                if i - 6 >= 1: ## 6 INSTEAD OF 7
+                    old_new_sum = (case_list[i - 6][3] - case_list[i - 7][3]) ## 6 INSTEAD OF 7 AND 7 INSTEAD OF 8
                 else:
-                    old_new_sum = case_list[i - 7][3]
+                    old_new_sum = case_list[i - 6][3] ## 6 INSTEAD OF 7
                 sum_new_cases -= old_new_sum
 
             # comparing 7-day periods
